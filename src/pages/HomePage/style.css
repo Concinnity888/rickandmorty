@@ -1,0 +1,24 @@
+.ListCharacters {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-gap: 2rem;
+  justify-items: center;
+  justify-content: center;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.ListCharacters__item {
+  display: flex;
+}
+
+
+@media (max-width: 640px) {
+  .ListCharacters {
+    grid-template-columns: 1fr;
+  }
+}
+

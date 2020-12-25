@@ -1,0 +1,147 @@
+.CardCharacter {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  background: #3C3E44;
+  color: #FFFFFF;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  transition: all ease 0.25s;
+}
+
+.CardCharacter_big {
+  flex-direction: row;
+  padding: 4.5rem 10rem;
+}
+
+.CardCharacter__image {
+  max-width: 100%;
+}
+
+.CardCharacter_big .CardCharacter__image {
+  border-radius: 0.5rem;
+}
+
+.CardCharacter__link {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 1rem 2rem;
+
+  text-decoration: none;
+
+  color: inherit;
+
+  transition: all ease 0.25s;
+}
+
+.CardCharacter__link:hover {
+  color: #FF9800;
+
+  transition: all ease 0.25s;
+}
+
+.CardCharacter__link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.CardCharacter__desc {
+  margin-left: 4rem;
+}
+
+.CardCharacter__name {
+  margin: 0;
+
+  text-align: center;
+}
+
+.CardCharacter__name_small {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.CardCharacter__wrap-status {
+  font-size: 18px;
+}
+
+.CardCharacter__status {
+  position: relative;
+  padding-left: 16px;
+}
+
+.CardCharacter__status::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+}
+
+.CardCharacter__status_green::before {
+  background-color: #55CC44;
+}
+
+.CardCharacter__status_red::before {
+  background-color: #D63D2E;
+}
+
+.CardCharacter_big dl {
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.CardCharacter_big dt {
+  font-size: 16px;
+  font-weight: 500;
+
+  color: #BBBBBB;
+}
+
+.CardCharacter_big dd {
+  margin: 0;
+  margin-bottom: 1rem;
+
+  font-size: 18px;
+}
+
+.CardCharacter_big dd:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+
+
+@media (max-width: 991px) {
+  .CardCharacter_big {
+    padding: 4.5rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .CardCharacter_big {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5.5rem 2rem;
+  }
+
+  .CardCharacter__desc {
+    margin-left: 0;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .CardCharacter__name_small {
+    text-align: center;
+  }
+}

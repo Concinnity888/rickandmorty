@@ -1,0 +1,35 @@
+.Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 4.5rem 2rem 5rem;
+  box-sizing: border-box;
+
+  background-color: #FFFFFF;
+}
+
+.Header__title {
+  margin: 0;
+
+  font-size: 5.625rem;
+  line-height: 1.1;
+  font-weight: 900;
+  text-align: center;
+
+  color: #202329;
+}
+
+
+@media (max-width: 991px) {
+  .Header__title {
+    font-size: 3.75rem;
+  }
+}
+
+
+@media (max-width: 640px) {
+  .Header__title {
+    font-size: 3.125rem;
+  }
+}
